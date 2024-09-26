@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Documentación Técnica</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>JavaScript</header>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#Introducción">Introducción</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Lo_que_deberias_saber">Lo que deberías saber</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#JavaScript_y_Java">JavaScript y Java</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Variables">Variables</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Declarando_Variables">Declarando variables</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="main-doc">
+            <section class="main-section" id="Introducción">
+                <header>Introducción</header>
+                <p>JavaScript es un lenguaje de programación multiplataforma orientado a objetos. Dentro de un entorno de host (por ejemplo, un navegador web), JavaScript se puede conectar a los objetos de su entorno para proporcionar control sobre ellos.</p>
+                <p>JavaScript contiene una biblioteca estándar de objetos, como Array, y un conjunto central de elementos del lenguaje, como operadores, estructuras de control y declaraciones. JavaScript se puede ampliar para diversos fines complementándolo con objetos adicionales; por ejemplo:</p>
+                <ul>
+                    <li>JavaScript del lado del cliente amplía el lenguaje principal al proporcionar objetos para controlar el navegador y su DOM. Por ejemplo, las extensiones del lado del cliente permiten que una aplicación coloque elementos en un formulario HTML y responda a eventos del usuario, como clics del mouse.</li>
+                    <li>JavaScript del lado del servidor amplía el lenguaje principal al proporcionar objetos relevantes para ejecutar JavaScript en un servidor. Por ejemplo, las extensiones del lado del servidor permiten que una aplicación se comunique con una base de datos o realicen manipulaciones de archivos en un servidor.</li>
+                </ul>
+                <p>Sigamos avanzando...</p>
+            </section>
+            <section class="main-section" id="Lo_que_deberias_saber">
+                <header>Lo que ya deberías saber</header>
+                <p>La información de este documento fue escrita asumiendo que el lector tiene conocimientos básicos sobre:</p>
+                <ul>    
+                    <li>Navegadores web y el DOM.</li>
+                    <li>Herramientas de depuración.</li>
+                    <li>Fundamentos de HTML5 y CSS3:</li>
+                </ul>
+                <code class="code-container"> head body -  color margin padding - etc</code>
+                <p>Tener estos puntos claros da una base sólida para aprender JavaScript y sacarle el máximo provecho al lenguaje tanto en la parte de frontend como en backend.</p>
+            </section>
+            <section class="main-section" id="JavaScript_y_Java">
+                <header>JavaScript y Java</header>
+                <p>Java y JavaScript son lenguajes de programación muy distintos a pesar de su nombre similar. Java es un lenguaje de propósito general, y se utiliza principalmente para aplicaciones empresariales, móviles (como Android) y de servidor. Su código se compila, y se debe ejecutar en la Java Virtual Machine (JVM), lo que permite que sea multiplataforma. Además, Java es fuertemente tipado, lo que significa que se debe declarar el tipo de dato de las variables, y está diseñado principalmente para la programación orientada a objetos, usando clases y herencia.</p>
+                <p>Por otro lado, JavaScript es un lenguaje interpretado, inicialmente desarrollado para la web, que se ejecuta en navegadores o en entornos como Node.js. Es de tipado dinámico, lo que significa que las variables pueden cambiar de tipo durante la ejecución. En lugar de basarse en clases como Java, JavaScript usa un modelo basado en prototipos para su orientación a objetos.</p>
+                <p>Java es más adecuado para aplicaciones de gran escala y sistemas complejos, mientras que JavaScript es popular para la creación de interfaces web interactivas, manipulando el DOM y gestionando eventos en el navegador.</p>
+            </section>
+            <section class="main-section" id="Variables">
+                <header>Variables</header>
+                <p>En JavaScript, las variables son contenedores que almacenan valores y se pueden declarar usando tres palabras clave principales: <code>let</code> y <code>const</code>. Cada una tiene características diferentes en cuanto a su alcance y mutabilidad. A continuación, algunos ejemplos de cómo declararlas:</p>
+                <div class="code-container">
+                    <code>let y = 5;</code> <br />
+                    <code>let texto = "Hola";</code> <br />
+                    <code>const pi = 3.141592;</code> <br />
+                </div>
+                <p>Las variables declaradas con <code>let</code> y <code>const</code> están limitadas al bloque donde se declaran (todo lo que está dentro de { }). Esto incluye funciones, bucles y condiciones. Es importante recordar que las variables constantes no pueden ser redefinidas.</p>
+            </section>
+            <section class="main-section" id="Declarando_Variables">
+                <header>Declarando variables - restricciones</header>
+                <p>En JavaScript, los nombres de las variables deben seguir ciertas reglas y restricciones para ser válidos: debe comenzar con una letra, guion bajo (_) o signo de dólar ($); no puede usar palabras reservadas (if, else, while, for, function, return, class, etc); son sensibles a mayúsculas y minúsculas; no puede contener espacios.</p>
+                <div class="code-container">
+                    <code>let %var; // Error: el símbolo % no es permitido</code> <br />
+                    <code>let let = 5; // Error: "let" es una palabra reservada</code> <br />
+                    <code>let nombre completo; // Error: los espacios no están permitidos</code> <br />
+                    <code>let nombre# = 'Carlos'; // Error: el símbolo # no está permitido</code> <br />
+                </div>
+                <p>Siguiendo estas restricciones y buenas prácticas, se puede lograr un código más claro, legible y menos propenso a errores.</p>
+            </section>
+        </main>
+    </body>
+</html>
